@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fafafa;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.primary {
+  padding: 12px 32px;
+  font-size: 17px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+.label {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.dob input {
+  width: 90px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.heart-wrapper {
+  margin: 30px auto;
+}
+
+.dil-heart {
+  font-size: 90px;
+  animation: beat 0.83s infinite ease-in-out;
+}
+
+@keyframes beat {
+  0%   { transform: scale(1); }
+  35%  { transform: scale(1.08); }
+  70%  { transform: scale(1); }
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.count {
+  font-size: 48px;
+  font-weight: 600;
+  color: #b01224;
+}
+
+.unit {
+  color: #444;
+}
+
+.age {
+  margin-top: 8px;
+  color: #666;
+}
+
+footer {
+  margin-top: 70px;
+  font-size: 13px;
+  color: #888;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How Many Heartbeats Have You Had?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+  <h1>How Many Heartbeats Have You Had?</h1>
+  <p class="subtitle">
+    An estimate based on an average resting heart rate of 72 beats per minute.
+  </p>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <button class="primary" onclick="startGame()">Start</button>
+  </div>
+
+  <!-- Input Screen -->
+  <div id="input-screen" class="hidden">
+    <p class="label">Date of birth</p>
+    <div class="dob">
+      <input id="day" placeholder="DD">
+      <input id="month" placeholder="MM">
+      <input id="year" placeholder="YYYY">
+    </div>
+    <button class="primary" onclick="calculate()">Continue</button>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="result-screen" class="hidden">
+
+    <!-- Simple Dil Heart -->
+    <div class="heart-wrapper">
+      <div class="dil-heart">❤️</div>
+    </div>
+
+    <div class="stats">
+      <div id="heartbeat-count" class="count">0</div>
+      <div class="unit">heartbeats so far</div>
+      <div id="age-display" class="age"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    This is a simplified physiological estimate. Actual heart rate varies.
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
